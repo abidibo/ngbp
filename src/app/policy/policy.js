@@ -1,23 +1,23 @@
-angular.module( 'wc.about', [
+angular.module( 'wc.policy', [
   'ui.router',
   'placeholders',
   'ui.bootstrap'
 ])
 
 .config(function config( $stateProvider ) {
-  $stateProvider.state( 'about', {
-    url: '/about',
+  $stateProvider.state( 'policy', {
+    url: '/policy',
     views: {
       "main": {
-        controller: 'AboutCtrl',
-        templateUrl: 'about/about.tpl.html'
+        controller: 'PolicyCtrl',
+        templateUrl: 'policy/policy.tpl.html'
       }
     },
-    data:{ pageTitle: 'Cos\'è?' }
+    data:{ pageTitle: 'Cookie Policy' }
   });
 })
 
-.controller( 'AboutCtrl', function AboutCtrl( $scope ) {
+.controller( 'PolicyCtrl', function AboutCtrl( $scope ) {
   // This is simple a demo for UI Boostrap.
   $scope.dropdownDemoItems = [
     "The first choice!",

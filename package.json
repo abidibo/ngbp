@@ -1,16 +1,15 @@
 {
-  "author": "Josh David Miller",
-  "name": "ngbp",
-  "version": "0.3.2",
-  "homepage": "https://github.com/ngbp/ngbp",
+  "author": "abidibo",
+  "name": "Webcam Cumiana",
+  "version": "0.1",
+  "homepage": "http://www.stefanocontini.name/webcam/cumiana/",
   "licenses": {
     "type": "MIT",
-    "url": "https://raw.github.com/ngbp/ngbp/master/LICENSE"
+    "url": "http://opensource.org/licenses/MIT"
   },
-  "bugs": "https://github.com/ngbp/ngbp/issues",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ngbp/ngbp.git"
+    "url": ""
   },
   "dependencies": {},
   "devDependencies": {

@@ -1,0 +1,28 @@
+.topbar {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    background: #fff;
+    padding: 10px 20px;
+    z-index: 2;
+    ul {
+        padding: 0px 20px 0 0;
+    }
+    ul li {
+        float: left;
+        list-style-type: none;
+        margin-right: 20px;
+    }
+    i {
+        font-size: 26px;
+        color: @blue;
+    }
+    li.active i {
+        color: @primary;
+    }
+}
+@media(min-width:@screen-md) {
+    .topbar i { font-size: 36px; }
+}
+
+

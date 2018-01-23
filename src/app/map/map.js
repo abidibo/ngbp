@@ -1,23 +1,23 @@
-angular.module( 'wc.about', [
+angular.module( 'wc.map', [
   'ui.router',
   'placeholders',
   'ui.bootstrap'
 ])
 
 .config(function config( $stateProvider ) {
-  $stateProvider.state( 'about', {
-    url: '/about',
+  $stateProvider.state( 'map', {
+    url: '/map',
     views: {
       "main": {
-        controller: 'AboutCtrl',
-        templateUrl: 'about/about.tpl.html'
+        controller: 'MapCtrl',
+        templateUrl: 'map/map.tpl.html'
       }
     },
-    data:{ pageTitle: 'Cos\'è?' }
+    data:{ pageTitle: 'Mappa' }
   });
 })
 
-.controller( 'AboutCtrl', function AboutCtrl( $scope ) {
+.controller( 'MapCtrl', function AboutCtrl( $scope ) {
   // This is simple a demo for UI Boostrap.
   $scope.dropdownDemoItems = [
     "The first choice!",

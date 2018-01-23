@@ -11,6 +11,8 @@
  */
 
 @import '../../vendor/bootstrap/less/bootstrap.less';
+@import '../../vendor/bootstrap-material-design/less/material.less';
+@import '../../vendor/bootstrap-material-design/less/ripples.less';
 
 
 /**
@@ -19,7 +21,35 @@
  */
 
 @import 'variables.less';
+@import 'navbar.less';
+@import 'topbar.less';
 
+body {
+    padding-top: 120px;
+    color: @text-color !important;
+}
+
+/**
+ * view
+ */
+.main-container {
+    position: relative;
+    [ui-view] {
+    }
+}
+.anim-in-out.anim-in-setup {
+    position: absolute;
+    max-width: 99%;
+}
+#map {
+    width: 100%;
+    height: 300px;
+}
+@media(min-width:@screen-md) {
+    #map {
+        height: 600px;
+    }
+}
 
 /**
  * Typography
@@ -64,52 +94,18 @@ h2 {
 
 
 /**
- * Navigation
- */
-
-.navbar {
-  margin-top: 20px;
-  
-  small {
-    font-size: 60%;
-  }
-}
-
-
-/**
  * Footer
  */
 
 .footer {
-  margin-top: 80px;
+  margin-top: 20px;
 
   .footer-inner {
     padding: 40px 0;
     border-top: 1px solid #DDD;
   }
 
-  .social {
-    float: right;
-    margin: 0;
-    list-style: none;
-
-    li {
-      float: left;
-      margin-left: 20px;
-
-      a, a:visited {
-        color: @gray-light;
-        text-decoration: none;
-        font-size: 40px;
-        .transition( 250ms ease-in-out );
-
-        &:hover {
-          color: @gray;
-        }
-      }
-    }
-  }
-}
+ }
 
 
 /**
